@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.result-controller {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.controller-heading {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.controller-main {
+  display: flex;
+  gap: 8px;
+}
+
+#rollNumberField {
+  all: unset;
+  border-radius: 4px;
+  padding: 8px;
+  border: 2px solid #28a745;
+}
+
+#rollNumberField:focus {
+  border: 2px solid rgb(45, 126, 240);
+  color: rgb(45, 126, 240);
+}
+
+#searchBtn {
+  all: unset;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: #28a745;
+  border: 2px solid #28a745;
+}
+
+#searchBtn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #28a745
+}
+
+#comment {
+  text-align: center;
+  font-weight: 600;
+}
+
+table {
+  border: 2px solid black;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 8px;
+}
+
+thead {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+}
+
+thead tr {
+  height: 50px;
+}
+
+#table-one th {
+  text-align: left;
+}
+
+#table-one thead th {
+  text-align: center;
+}
+
+#table-one tr {
+  border-top: 2px solid black;
+}
+
+#table-two td:nth-child(4),
+#table-two td:nth-child(5),
+#table-two td:nth-child(6),
+#table-two td:nth-child(7) {
+  text-align: center;
+}
+
+#table-two td:nth-child(7) {
+  width: 112px;
+}
+
+#table-two td,
+#table-two th {
+  border: 2px solid black;
+}
+
+#table-two tr:last-child {
+  text-align: center;
+}
